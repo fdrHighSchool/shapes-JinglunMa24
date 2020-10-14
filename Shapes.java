@@ -50,12 +50,7 @@ public class Shapes{
 
   } //close for main
 
-  /*
-   * N: square
-   * P: to calculate the area of any square
-   * I: a side measure (double)
-   * R:
-   */
+
   public static double square(double s){
     //side times side
     double sa = s * s;
