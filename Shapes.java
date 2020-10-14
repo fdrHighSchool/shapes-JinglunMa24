@@ -34,6 +34,20 @@ public class Shapes{
       } //close for if tAns 2
     } //close for triangles if
 
+    if ("rectangle".equals(chose)) {
+      System.out.print("Enter the length of rectangle: ");
+      double len = input.nextDouble();
+      System.out.print("Enter the width of rectangle: ");
+      double wid = input.nextDouble();
+      rectangle(len,wid);
+    } //end rectangle if
+
+    if ("circle".equals(chose)) {
+      System.out.print("Enter the radius of circle: ");
+      double r = input.nextDouble();
+      circle(r);
+    } //end circle if
+
   } //close for main
 
   /*
@@ -44,23 +58,37 @@ public class Shapes{
    */
   public static double square(double s){
     //side times side
-    double a = s * s;
+    double sa = s * s;
 
     //generate some output
-    System.out.println("A square with side " + s + " has an area of " + a);
-    return a;
+    System.out.println("A square with side " + s + " has an area of " + sa);
+    return sa;
   }//close square method
 
-  public static void triangle1(double base, double height) {
-    double area = (base * height)/2;
-    System.out.println("Area of th right triangle is: " + area);
+  public static double triangle1(double base, double height) {
+    double t1a = (base * height)/2;
+    System.out.println("Area of th right triangle is: " + t1a);
+    return t1a;
   } //close for triangle1
 
-  public static void triangle2(double len1, double len2, double len3) {
+  public static double triangle2(double len1, double len2, double len3) {
     double s = (len1 + len2 + len3)/2;
     double area = s * (s - len1) * (s - len2) * (s - len3);
-    double Area = Math.pow(area, 0.5);
-    System.out.println("Area of the triangle is: " + Area);
+    double t2a = Math.pow(area, 0.5);
+    System.out.println("Area of the triangle is: " + t2a);
+    return t2a;
   } //close for triangle2
+
+  public static double rectangle(double len, double wid) {
+    double ra = len * wid;
+    System.out.println("Area of the rectangle is: " + ra);
+    return ra;
+  } //end rectangle
+
+  public static double circle(double radius) {
+    double ca = radius * radius * Math.PI;
+    System.out.println("Area of the circle is: " + ca);
+    return ca;
+  } //end circle
 
 } //close for class
