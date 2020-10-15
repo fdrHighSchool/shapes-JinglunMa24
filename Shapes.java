@@ -3,7 +3,7 @@ import java.util.*;
 public class Shapes{
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.println("Choose the shape you want to calculate the area/volume of\n1.Square\n2.Triangle\n3.Rectangle\n4.Circle\n5.Cube\n6.Triangular Prism\n7.Rectangular Prism\n8.Sphere");
+    System.out.println("Choose one that you want the area/volume of\n1.Square\n2.Triangle\n3.Rectangle\n4.Circle\n5.Cube\n6.Triangular Prism\n7.Rectangular Prism\n8.Sphere");
     int chose = input.nextInt();
 
     if (chose == 1) {
