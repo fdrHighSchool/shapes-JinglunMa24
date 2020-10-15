@@ -84,7 +84,7 @@ public class Shapes{
   public static double circle(double r) {
     double ca = Math.pow(r,2) * Math.PI;
     return ca;
-  }
+  } //end circle
 
 
 } //close for class
