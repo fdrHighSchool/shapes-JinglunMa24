@@ -10,6 +10,7 @@ public class Shapes{
       System.out.print("Enter the side length: ");
       double side = input.nextDouble();
       square(side);
+      System.out.println("Area of square is: " + sa);
     } //close for square if
 
     if ("triangle".equals(chose)) {
@@ -48,15 +49,20 @@ public class Shapes{
       circle(r);
     } //end circle if
 
+    if ("cube".equals(chose)) {
+      System.out.print("Enter the len of cube: ");
+      double len = input.nextDouble();
+      square(len);
+      double cubeV = sa * len;
+      System.out.println("Volume of cube is: " + cubeV);
+    } //end cube if
+
   } //close for main
 
 
   public static double square(double s){
     //side times side
     double sa = s * s;
-
-    //generate some output
-    System.out.println("A square with side " + s + " has an area of " + sa);
     return sa;
   }//close square method
 
