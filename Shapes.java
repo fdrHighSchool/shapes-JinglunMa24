@@ -60,7 +60,7 @@ public class Shapes{
 
   public static double square(double s){
     //side times side
-    double sa = s * s;
+    double sa = Math.pow(s,2);
     return sa;
   }//close square method
 
@@ -82,7 +82,7 @@ public class Shapes{
   } //end rectangle
 
   public static double circle(double r) {
-    double ca = r * r * Math.PI;
+    double ca = Math.pow(r,2) * Math.PI;
     return ca;
   }
 
