@@ -12,7 +12,7 @@ public class Shapes{
       System.out.println("Area of square is: " + square(side));
     } //close for square if
 
-    if (chose == 2) {
+    else if (chose == 2) {
       System.out.println("Choose the way to calculate triangle.\n1.base and height\n2.3 lengths");
       int tAns = input.nextInt();
       if (tAns == 1) {
@@ -23,7 +23,7 @@ public class Shapes{
         System.out.println("Area of the triangle is: " + triangle1(base,height));
       } //close for if tAns 1
 
-      if (tAns == 2) {
+      else if (tAns == 2) {
         System.out.print("Enter the first length: ");
         double len1 = input.nextDouble();
         System.out.print("Enter the second length: ");
@@ -34,7 +34,7 @@ public class Shapes{
       } //close for if tAns 2
     } //close for triangles if
 
-    if (chose == 3) {
+    else if (chose == 3) {
       System.out.print("Enter the length: ");
       double len = input.nextDouble();
       System.out.print("Enter the width: ");
@@ -42,13 +42,13 @@ public class Shapes{
       System.out.println("Area of the rectangle is: " + rectangle(len,wid));
     } //end rectangle if
 
-    if (chose == 4) {
+    else if (chose == 4) {
       System.out.print("Enter the radius: ");
       double r = input.nextDouble();
       System.out.println("Area of the circle is: " + circle(r));
     } //end circle if
 
-    if (chose == 5) {
+    else if (chose == 5) {
       System.out.print("Enter the len: ");
       double len = input.nextDouble();
       double cubeV = square(len) * len;
@@ -66,7 +66,7 @@ public class Shapes{
       System.out.println("Volume of Triangular Prism is: " + v);
     } //end Triangular Prism if
 
-    if (chose == 7) {
+    else if (chose == 7) {
       System.out.print("Enter the lenth: ");
       double len = input.nextDouble();
       System.out.print("Enter the width: ");
@@ -77,7 +77,7 @@ public class Shapes{
       System.out.println("Volume of Rectangular Prism is: " + v);
     } //end Rectangular Prism if
 
-    if (chose == 8) {
+    else if (chose == 8) {
       System.out.print("Enter the radius: ");
       double r = input.nextDouble();
       double v = ((double)4/3) * circle(r) * r;
